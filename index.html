@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mayadere Fırın &amp; Kahve · Ekşi mayalı ekmek ve kahve (demo)</title>
+  <meta name="description" content="Ekşi mayalı ekmekler, tereyağlı hamur işleri ve özenle demlenen kahve. Mayadere Fırın &amp; Kahve, tek sayfalık tanıtım sitesi örneği için kurgulanmış bir mahalle fırınıdır.">
+  <link rel="canonical" href="https://caniyli.github.io/tanitim-sitesi-demo/">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fbf6ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16110e" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="Mayadere Fırın &amp; Kahve (demo)">
+  <meta property="og:title" content="Mayadere Fırın &amp; Kahve · Tek sayfalık tanıtım sitesi demosu">
+  <meta property="og:description" content="Ekşi mayalı ekmek, hamur işleri ve kahve. Kurgusal bir işletme için hazırlanmış, telefon uyumlu tanıtım sitesi örneği.">
+  <meta property="og:url" content="https://caniyli.github.io/tanitim-sitesi-demo/">
+  <meta property="og:image" content="https://caniyli.github.io/tanitim-sitesi-demo/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mayadere Fırın &amp; Kahve logosu ve ekşi mayalı somun çizimi">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Mayadere Fırın & Kahve",
+    "description": "Kurgusal demo işletme: ekşi mayalı ekmek, hamur işleri ve kahve sunan bir mahalle fırını. Adres ve iletişim bilgileri gerçek değildir.",
+    "url": "https://caniyli.github.io/tanitim-sitesi-demo/",
+    "image": "https://caniyli.github.io/tanitim-sitesi-demo/assets/og-image.png",
+    "logo": "https://caniyli.github.io/tanitim-sitesi-demo/assets/apple-touch-icon.png",
+    "telephone": "+90 312 000 00 00",
+    "email": "ornek@example.com",
+    "priceRange": "₺₺",
+    "servesCuisine": ["Fırın ürünleri", "Kahve"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ihlamur Sokağı No: 7, Mayadere Mahallesi",
+      "addressLocality": "Ankara",
+      "addressCountry": "TR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "16:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Simge kümesi: sayfadaki tüm simgeler buradan <use> ile çağrılır. -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="logo" viewBox="0 0 64 64">
+      <circle class="logo-bg" cx="32" cy="32" r="31"/>
+      <path class="logo-fg" d="M12 41c0-13.5 8.6-22 20-22s20 8.5 20 22c0 2.8-2 4.5-4.6 4.5H16.6C14 45.5 12 43.8 12 41z"/>
+      <path class="logo-score" d="M22 36.5c3.6-6.8 10.6-10 18.5-8.6" stroke-width="3.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-loaf" viewBox="0 0 24 24">
+      <path d="M3.5 16.5c0-6 3.8-9.5 8.5-9.5s8.5 3.5 8.5 9.5c0 1.2-.8 2-2 2h-13c-1.2 0-2-.8-2-2z"/>
+      <path d="M8 14c1.4-2.4 3.8-3.6 6.5-3.3"/>
+    </symbol>
+    <symbol id="i-croissant" viewBox="0 0 24 24">
+      <path d="M4.2 15.8C3 13 4.6 9.3 8 7.6c2.6-1.3 5.4-1.3 8 0 3.4 1.7 5 5.4 3.8 8.2"/>
+      <path d="M4.2 15.8c1.4.9 3 .6 4-.6L12 11l3.8 4.2c1 1.2 2.6 1.5 4 .6"/>
+      <path d="M9.3 7.1 10.4 13M14.7 7.1 13.6 13"/>
+    </symbol>
+    <symbol id="i-cup" viewBox="0 0 24 24">
+      <path d="M4 10h12v4.5A5.5 5.5 0 0 1 10.5 20h-1A5.5 5.5 0 0 1 4 14.5z"/>
+      <path d="M16 11.5h1.5a2.5 2.5 0 0 1 0 5H16"/>
+      <path d="M8 3.5c-.9 1 .9 2.1 0 3.2M12 3.5c-.9 1 .9 2.1 0 3.2"/>
+    </symbol>
+    <symbol id="i-plate" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="8.5"/>
+      <path d="M8.6 10.2c.8-2 3.2-2.6 4.9-1.6 2 1.1 2.4 3.6 1.3 5.3-1.2 1.8-3.8 2.1-5.4 1-1.4-1-1.5-3-.8-4.7z"/>
+      <circle cx="11.9" cy="11.9" r="1.4"/>
+    </symbol>
+    <symbol id="i-basket" viewBox="0 0 24 24">
+      <path d="M3 10.5h18l-1.8 8.2a2 2 0 0 1-2 1.6H6.8a2 2 0 0 1-2-1.6z"/>
+      <path d="M7.5 10.5 10.5 4M16.5 10.5 13.5 4M9 14v3M12 14v3M15 14v3"/>
+    </symbol>
+    <symbol id="i-pin-roll" viewBox="0 0 24 24">
+      <path d="m6.3 13.9 7.6-7.6a2 2 0 0 1 2.8 0l1 1a2 2 0 0 1 0 2.8l-7.6 7.6a2 2 0 0 1-2.8 0l-1-1a2 2 0 0 1 0-2.8z"/>
+      <path d="m3 21 3-3M18 6l3-3"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path d="M6.6 3.5h2.6l1.6 4.2-2.2 1.5a11.5 11.5 0 0 0 6.2 6.2l1.5-2.2 4.2 1.6v2.6a2 2 0 0 1-2.2 2A16.6 16.6 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/>
+    </symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24">
+      <path d="M12 3.5a8.5 8.5 0 0 0-7.4 12.7L3.5 20.5l4.4-1.1A8.5 8.5 0 1 0 12 3.5z"/>
+      <path d="M8.5 10.5h7M8.5 13.5h4.5"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="m3.5 7 8.5 6 8.5-6"/>
+    </symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24">
+      <path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z"/>
+      <circle cx="12" cy="10" r="2.4"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M7 17 17 7M9 7h8v8"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#icerik">İçeriğe geç</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#ust">
+        <svg class="brand-mark" aria-hidden="true" focusable="false"><use href="#logo"/></svg>
+        <span class="brand-text">
+          <span class="brand-name">Mayadere</span>
+          <span class="brand-sub">Fırın &amp; Kahve</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menü</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="#hizmetler">Hizmetler</a></li>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#ziyaret">Saatler &amp; Konum</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="icerik" tabindex="-1">
+    <!-- KAHRAMAN ALANI -->
+    <section class="hero" id="ust" aria-labelledby="hero-baslik">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Mahalle fırını · Ankara</p>
+          <h1 id="hero-baslik">Ekmeğini acele etmeden yapan mahalle fırını.</h1>
+          <p class="lead">Mayadere’de hamur bir gece dinlenir, sabah taş fırında pişer. Ekşi mayalı somunlar, tereyağlı kruvasanlar ve özenle demlenen kahvelerle haftanın altı günü açığız.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/903120000000" data-demo="Gerçek sitede bu düğme WhatsApp sohbetini açar; müşteri siparişini doğrudan yazar.">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chat"/></svg>
+              WhatsApp’tan sipariş
+            </a>
+            <a class="btn btn-secondary" href="#hizmetler">Neler var?</a>
+          </div>
+          <p class="open-status" data-open-status hidden></p>
+        </div>
+
+        <div class="hero-art">
+          <svg class="hero-svg" viewBox="0 0 560 500" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="h-sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" class="sky-a"/>
+                <stop offset="1" class="sky-b"/>
+              </linearGradient>
+              <radialGradient id="h-crust" cx=".35" cy=".22" r=".9">
+                <stop offset="0" stop-color="#E7B06E"/>
+                <stop offset=".5" stop-color="#BE7434"/>
+                <stop offset="1" stop-color="#7E3E18"/>
+              </radialGradient>
+              <radialGradient id="h-lobe" cx=".4" cy=".3" r=".75">
+                <stop offset="0" stop-color="#F6C474"/>
+                <stop offset=".55" stop-color="#D48838"/>
+                <stop offset="1" stop-color="#9A531E"/>
+              </radialGradient>
+              <clipPath id="h-window">
+                <path d="M70 440V240a210 210 0 0 1 420 0v200z"/>
+              </clipPath>
+            </defs>
+
+            <g clip-path="url(#h-window)">
+              <rect x="60" y="20" width="440" height="430" fill="url(#h-sky)"/>
+              <circle class="h-sun" cx="376" cy="142" r="42"/>
+              <g class="h-stars">
+                <circle cx="140" cy="120" r="2"/><circle cx="196" cy="74" r="1.6"/><circle cx="250" cy="130" r="1.4"/>
+                <circle cx="310" cy="70" r="1.8"/><circle cx="440" cy="220" r="1.5"/><circle cx="120" cy="210" r="1.4"/>
+                <circle cx="220" cy="190" r="1.2"/><circle cx="460" cy="120" r="1.4"/>
+              </g>
+              <path class="h-hill" d="M60 330c90-30 170-20 250 0s150 10 200-8v130H60z"/>
+              <g class="h-roofs">
+                <path d="M70 450V352l34-30 34 30v98z"/>
+                <path d="M138 450v-76h52v76z"/>
+                <path d="M150 374v-16h10v16z"/>
+                <path d="M300 450V340l30-28 30 28v110z"/>
+                <path d="M360 450v-84h70v84z"/>
+                <path d="M430 450V360l36-32 36 32v90z"/>
+              </g>
+              <g class="h-lights">
+                <rect x="94" y="360" width="10" height="12" rx="1"/><rect x="160" y="388" width="10" height="12" rx="1"/>
+                <rect x="322" y="350" width="10" height="12" rx="1"/><rect x="378" y="380" width="10" height="12" rx="1"/>
+                <rect x="404" y="380" width="10" height="12" rx="1"/><rect x="458" y="368" width="10" height="12" rx="1"/>
+              </g>
+              <g class="h-tree">
+                <circle cx="222" cy="386" r="26"/><circle cx="252" cy="398" r="20"/>
+              </g>
+            </g>
+            <path class="h-frame" d="M70 440V240a210 210 0 0 1 420 0v200" fill="none" stroke-width="14"/>
+            <path class="h-frame" d="M280 34v406M70 250h420" fill="none" stroke-width="6"/>
+
+            <!-- tezgâh -->
+            <ellipse class="h-shadow" cx="280" cy="470" rx="250" ry="14"/>
+            <rect x="26" y="436" width="508" height="22" rx="6" fill="#9C6538"/>
+            <rect x="26" y="436" width="508" height="6" rx="3" fill="#B97D4B"/>
+
+            <!-- somun -->
+            <ellipse cx="246" cy="436" rx="112" ry="9" fill="#3E2210" opacity=".3"/>
+            <path d="M136 432c0-82 48-136 110-136s110 54 110 136c0 5-5 7-12 7H148c-7 0-12-2-12-7z" fill="url(#h-crust)"/>
+            <path d="M170 408c16-54 66-86 126-76-54 6-94 36-114 82z" fill="#F1CB92"/>
+            <path d="M182 414c20-48 60-78 114-84" fill="none" stroke="#7E3E18" stroke-width="3" stroke-linecap="round"/>
+            <path d="M286 386c12-9 26-11 40-6-14 2-26 8-35 17zM296 412c10-7 22-8 33-3-11 2-21 6-29 13zM192 344c8-9 18-14 30-14-10 4-18 10-24 18z" fill="#EDC48A"/>
+            <g fill="#FFFCF4" opacity=".6">
+              <circle cx="226" cy="316" r="3"/><circle cx="250" cy="310" r="2"/><circle cx="272" cy="320" r="2.5"/>
+              <circle cx="208" cy="332" r="2"/><circle cx="288" cy="334" r="1.8"/>
+            </g>
+
+            <!-- kruvasan -->
+            <g transform="translate(124 414)">
+              <ellipse cx="2" cy="22" rx="70" ry="9" fill="#3E2210" opacity=".28"/>
+              <g fill="url(#h-lobe)" stroke="#8A4517" stroke-width="1.6">
+                <ellipse cx="-60" cy="14" rx="15" ry="8" transform="rotate(-42 -60 14)"/>
+                <ellipse cx="60" cy="14" rx="15" ry="8" transform="rotate(42 60 14)"/>
+                <ellipse cx="-44" cy="-1" rx="20" ry="13" transform="rotate(-30 -44 -1)"/>
+                <ellipse cx="44" cy="-1" rx="20" ry="13" transform="rotate(30 44 -1)"/>
+                <ellipse cx="-23" cy="-11" rx="21" ry="18" transform="rotate(-14 -23 -11)"/>
+                <ellipse cx="23" cy="-11" rx="21" ry="18" transform="rotate(14 23 -11)"/>
+                <ellipse cx="0" cy="-12" rx="19" ry="20"/>
+              </g>
+              <g fill="#FFE2A8" opacity=".55">
+                <ellipse cx="-6" cy="-20" rx="7" ry="8"/>
+                <ellipse cx="-28" cy="-19" rx="7" ry="5" transform="rotate(-14 -28 -19)"/>
+                <ellipse cx="18" cy="-20" rx="6" ry="4" transform="rotate(14 18 -20)"/>
+              </g>
+            </g>
+
+            <!-- fincan -->
+            <g class="h-steam" fill="none" stroke-width="4" stroke-linecap="round">
+              <path d="M424 340c-9-11 9-19 0-30s9-19 0-30"/>
+              <path d="M444 334c-8-10 8-17 0-27s8-17 0-27"/>
+              <path d="M464 340c-9-11 9-19 0-30s9-19 0-30"/>
+            </g>
+            <ellipse cx="444" cy="438" rx="68" ry="12" fill="#3E2210" opacity=".22"/>
+            <ellipse cx="444" cy="432" rx="68" ry="12" fill="#F3EBDF" stroke="#D3C3AE" stroke-width="2"/>
+            <path d="M488 368c24 0 26 32 2 36" fill="none" stroke="#FAF5EE" stroke-width="9" stroke-linecap="round"/>
+            <path d="M400 356h88v38c0 22-20 38-44 38s-44-16-44-38z" fill="#FAF5EE" stroke="#D3C3AE" stroke-width="2"/>
+            <path d="M400 378h88v10h-88z" fill="#C46A3A"/>
+            <ellipse cx="444" cy="356" rx="44" ry="8" fill="#FAF5EE" stroke="#D3C3AE" stroke-width="2"/>
+            <ellipse cx="444" cy="357" rx="37" ry="5.5" fill="#5B3420"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- HİZMETLER -->
+    <section class="section" id="hizmetler" aria-labelledby="hizmetler-baslik">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Hizmetler</p>
+          <h2 id="hizmetler-baslik">Tezgâhta neler var?</h2>
+          <p class="section-lead">Her şey küçük partiler hâlinde, gün içinde birkaç kez fırından çıkıyor. Günün ürünleri tükenince yenisini ertesi sabah pişiriyoruz.</p>
+        </header>
+
+        <ul class="cards" role="list">
+          <li class="card">
+            <span class="card-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-loaf"/></svg></span>
+            <h3>Ekşi mayalı ekmekler</h3>
+            <p>Köy ekmeği, tam buğdaylı, çavdarlı ve zeytinli somunlar. İçinde yalnızca un, su, tuz ve ekşi maya var.</p>
+            <p class="card-meta">Her sabah</p>
+          </li>
+          <li class="card">
+            <span class="card-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-croissant"/></svg></span>
+            <h3>Kruvasan ve hamur işleri</h3>
+            <p>Tereyağlı kruvasan, tarçınlı çörek ve mevsim meyveli turtalar. Sabah ve öğleden sonra olmak üzere iki kez pişiyor.</p>
+            <p class="card-meta">Günde iki parti</p>
+          </li>
+          <li class="card">
+            <span class="card-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cup"/></svg></span>
+            <h3>Kahve ve çay</h3>
+            <p>Filtre kahve, espresso bazlı içecekler ve demlik çay. Paket servis için kendi bardağınızı getirebilirsiniz.</p>
+            <p class="card-meta">Gel-al ya da oturun</p>
+          </li>
+          <li class="card">
+            <span class="card-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plate"/></svg></span>
+            <h3>Hafta sonu kahvaltısı</h3>
+            <p>Kendi ekmeğimizle hazırlanan sade bir kahvaltı tabağı. Masa sayımız az; erken gelmenizi öneririz.</p>
+            <p class="card-meta">Cumartesi ve pazar</p>
+          </li>
+          <li class="card">
+            <span class="card-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-basket"/></svg></span>
+            <h3>Toplu ve özel sipariş</h3>
+            <p>Toplantı, doğum günü ve davetler için ekmek sepetleri ve hamur işi tepsileri hazırlıyoruz.</p>
+            <p class="card-meta">En az bir gün önceden</p>
+          </li>
+          <li class="card">
+            <span class="card-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin-roll"/></svg></span>
+            <h3>Ekşi maya atölyesi</h3>
+            <p>Küçük gruplarla evde ekşi mayalı ekmek yapmanın temellerini birlikte deniyoruz. Mayanızı yanınızda götürürsünüz.</p>
+            <p class="card-meta">Ayda bir, pazar öğleden sonra</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HAKKIMIZDA -->
+    <section class="section section-alt" id="hakkimizda" aria-labelledby="hakkimizda-baslik">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">Hakkımızda</p>
+          <h2 id="hakkimizda-baslik">Küçük bir fırın, yavaş bir tarif</h2>
+          <p>Mayadere, mahallenin köşesinde tek taş fırını olan küçük bir dükkân. Ekmeklerimizi hazır maya yerine kendi beslediğimiz ekşi mayayla yapıyor, hamuru acele ettirmiyoruz. Böylece kabuğu çıtır, içi nemli ve birkaç gün tazeliğini koruyan somunlar çıkıyor.</p>
+          <p>Tezgâhın öbür ucunda kahve var. Ekmeğin yanına yakışsın diye sade ve dengeli demliyoruz; sabah işe giderken uğrayan da, hafta sonu oturup gazetesini okuyan da aynı özeni görüyor.</p>
+
+          <ol class="principles">
+            <li>
+              <h3>Kısa bir malzeme listesi</h3>
+              <p>Ekmeklerde un, su, tuz ve ekşi maya. Katkı maddesi ya da hazır karışım kullanmıyoruz.</p>
+            </li>
+            <li>
+              <h3>Her gün yeniden</h3>
+              <p>Günlük ihtiyaca göre pişiriyoruz; vitrinde dünün ürününü bekletmiyoruz.</p>
+            </li>
+            <li>
+              <h3>Mevsimine göre</h3>
+              <p>Turta ve çöreklerde mevsimin meyvesini kullanıyoruz; tezgâh bu yüzden ay ay değişiyor.</p>
+            </li>
+          </ol>
+        </div>
+        <figure class="about-art">
+          <img src="assets/firin.svg" width="480" height="420" alt="Tuğla taş fırının ağzında yanan ateş ve pişmekte olan somunlar (çizim)" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <!-- GALERİ -->
+    <section class="section" id="galeri" aria-labelledby="galeri-baslik">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Galeri</p>
+          <h2 id="galeri-baslik">Fırından kareler</h2>
+          <p class="section-lead">Bu demoda fotoğraf yerine bu site için hazırlanmış çizimler kullanıldı. Sizin sitenizde bu alanda dükkânınızın, ürünlerinizin ve ekibinizin fotoğrafları yer alır.</p>
+        </header>
+
+        <div class="gallery">
+          <figure class="shot shot-wide">
+            <img src="assets/galeri/vitrin.svg" width="600" height="450" alt="Çizgili tenteli küçük fırın vitrini, kapıda “Açık” levhası (çizim)" loading="lazy" decoding="async">
+            <figcaption>Dükkânın vitrini</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/galeri/somun.svg" width="600" height="450" alt="Ahşap tezgâhta ekşi mayalı somunlar ve bir ekmek dilimi (çizim)" loading="lazy" decoding="async">
+            <figcaption>Sabahın ilk somunları</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/galeri/kruvasan.svg" width="600" height="450" alt="Fırın tepsisinde sıralanmış kruvasanlar (çizim)" loading="lazy" decoding="async">
+            <figcaption>Tereyağlı kruvasanlar</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/galeri/kahve.svg" width="600" height="450" alt="Demleme hunisinden sürahiye süzülen filtre kahve ve bir fincan (çizim)" loading="lazy" decoding="async">
+            <figcaption>Filtre kahve</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/galeri/maya.svg" width="600" height="450" alt="Kabarmış ekşi maya dolu cam kavanoz ve un çuvalı (çizim)" loading="lazy" decoding="async">
+            <figcaption>Ekşi maya kavanozu</figcaption>
+          </figure>
+          <figure class="shot shot-wide-sm">
+            <img src="assets/galeri/kahvalti.svg" width="600" height="450" alt="Yukarıdan görünen kahvaltı tabağı, çay bardağı ve ekmek sepeti (çizim)" loading="lazy" decoding="async">
+            <figcaption>Hafta sonu kahvaltısı</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAATLER VE KONUM -->
+    <section class="section section-alt" id="ziyaret" aria-labelledby="ziyaret-baslik">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Ziyaret</p>
+          <h2 id="ziyaret-baslik">Saatler ve konum</h2>
+        </header>
+
+        <div class="visit-grid">
+          <div class="panel" id="saatler">
+            <h3>Çalışma saatleri</h3>
+            <p class="open-status" data-open-status hidden></p>
+            <table class="hours">
+              <caption class="visually-hidden">Haftalık çalışma saatleri</caption>
+              <tbody>
+                <tr data-day="1" data-hours=""><th scope="row">Pazartesi</th><td>Kapalı</td></tr>
+                <tr data-day="2" data-hours="07:00-19:00"><th scope="row">Salı</th><td>07:00 – 19:00</td></tr>
+                <tr data-day="3" data-hours="07:00-19:00"><th scope="row">Çarşamba</th><td>07:00 – 19:00</td></tr>
+                <tr data-day="4" data-hours="07:00-19:00"><th scope="row">Perşembe</th><td>07:00 – 19:00</td></tr>
+                <tr data-day="5" data-hours="07:00-19:00"><th scope="row">Cuma</th><td>07:00 – 19:00</td></tr>
+                <tr data-day="6" data-hours="08:00-20:00"><th scope="row">Cumartesi</th><td>08:00 – 20:00</td></tr>
+                <tr data-day="0" data-hours="08:00-16:00"><th scope="row">Pazar</th><td>08:00 – 16:00</td></tr>
+              </tbody>
+            </table>
+            <p class="note">Resmî tatillerde saatler değişebilir. Ekşi mayalı somunlar çoğu gün öğleden sonra tükeniyor; ayırtmak için önceden yazabilirsiniz.</p>
+          </div>
+
+          <div class="panel" id="konum">
+            <h3>Konum</h3>
+            <figure class="map">
+              <svg class="map-svg" viewBox="0 0 420 320" role="img" aria-labelledby="harita-baslik harita-aciklama">
+                <title id="harita-baslik">Mayadere Fırın &amp; Kahve konum çizimi</title>
+                <desc id="harita-aciklama">Fırın, Dereboyu Caddesi’nden ayrılan Ihlamur Sokağı’nın başında, Mayadere Parkı’nın karşısında ve Mayadere durağına yakın.</desc>
+                <rect class="m-land" width="420" height="320"/>
+                <path class="m-park" d="M0 0h196c-4 34 6 60 24 82-62 18-140 22-220 18z"/>
+                <g class="m-tree">
+                  <circle cx="34" cy="28" r="12"/><circle cx="74" cy="48" r="10"/><circle cx="118" cy="26" r="13"/>
+                  <circle cx="156" cy="52" r="10"/><circle cx="20" cy="58" r="8"/>
+                </g>
+                <text class="m-label m-label-park" x="98" y="88" text-anchor="middle">Mayadere Parkı</text>
+
+                <g class="m-blocks">
+                  <rect x="236" y="10" width="76" height="50" rx="6"/><rect x="326" y="8" width="86" height="50" rx="6"/>
+                  <rect x="12" y="182" width="108" height="56" rx="6"/><rect x="136" y="178" width="104" height="60" rx="6"/>
+                  <rect x="12" y="254" width="228" height="58" rx="6"/>
+                  <rect x="282" y="150" width="128" height="72" rx="6"/><rect x="282" y="238" width="128" height="74" rx="6"/>
+                </g>
+
+                <path class="m-water" d="M-10 118c80-6 120 18 190 10s110-46 180-48 70 4 70 4"/>
+                <path class="m-road-edge" d="M-10 152c80-4 130 16 200 8s110-44 180-46 60 4 60 4"/>
+                <path class="m-road" id="m-cadde" d="M-10 152c80-4 130 16 200 8s110-44 180-46 60 4 60 4"/>
+                <path class="m-road-edge m-street" d="M262 132l-2 200"/>
+                <path class="m-road m-street" d="M262 132l-2 200"/>
+
+                <text class="m-label" dy="5"><textPath href="#m-cadde" startOffset="4%">Dereboyu Cd.</textPath></text>
+                <text class="m-label m-label-small" transform="translate(266 316) rotate(-90)">Ihlamur Sk.</text>
+
+                <g class="m-stop" transform="translate(178 160)">
+                  <circle r="11"/>
+                  <text class="m-stop-text" y="4.5" text-anchor="middle">D</text>
+                </g>
+                <text class="m-label m-label-small" x="178" y="206" text-anchor="middle">Durak</text>
+
+                <g transform="translate(261 194)">
+                  <ellipse class="m-pin-shadow" cx="0" cy="2" rx="10" ry="4"/>
+                  <path class="m-pin" d="M0 0c-4-12-18-20-18-34a18 18 0 0 1 36 0c0 14-14 22-18 34z"/>
+                  <circle class="m-pin-dot" cx="0" cy="-34" r="7"/>
+                </g>
+                <g transform="translate(290 164)">
+                  <rect class="m-tag" width="112" height="34" rx="17"/>
+                  <text class="m-tag-text" x="56" y="23" text-anchor="middle">Mayadere</text>
+                </g>
+
+                <g class="m-north" transform="translate(394 292)">
+                  <circle r="14"/>
+                  <path d="M0-9l5 12-5-3-5 3z"/>
+                </g>
+              </svg>
+              <figcaption class="visually-hidden">Stilize konum çizimi; ölçekli değildir.</figcaption>
+            </figure>
+
+            <address class="address">
+              Ihlamur Sokağı No: 7, Mayadere Mahallesi, Ankara
+            </address>
+            <p class="note">Mayadere durağına iki dakika yürüme mesafesindeyiz. Sokakta park yeri sınırlı.</p>
+            <p>
+              <a class="text-link" href="#" data-demo="Gerçek sitede bu bağlantı işletmenin Google Haritalar ya da Apple Haritalar konumunu açar.">
+                Haritada aç
+                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+              </a>
+            </p>
+            <p class="demo-hint">Demo notu: Bu çizim harita gömmek yerine kullanıldı; sayfa böylece hızlı açılır ve üçüncü taraf çerezi yüklemez. Gerçek sitede “Haritada aç” bağlantısı işletmenin harita konumuna gider, istenirse harita da gömülebilir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section class="section" id="iletisim" aria-labelledby="iletisim-baslik">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">İletişim</p>
+          <h2 id="iletisim-baslik">Sipariş ve sorularınız için</h2>
+          <p>Toplu sipariş, atölye kaydı ya da aklınıza takılan başka bir şey için formu doldurun veya bize doğrudan ulaşın.</p>
+
+          <ul class="contact-list" role="list">
+            <li>
+              <span class="contact-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg></span>
+              <span><span class="contact-label">Telefon</span>
+              <a href="tel:+903120000000" data-demo="Gerçek sitede bu bağlantı telefonda işletmenin numarasını arar.">0 (312) 000 00 00</a></span>
+            </li>
+            <li>
+              <span class="contact-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chat"/></svg></span>
+              <span><span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/903120000000" data-demo="Gerçek sitede bu bağlantı WhatsApp sohbetini açar.">WhatsApp’tan yazın</a></span>
+            </li>
+            <li>
+              <span class="contact-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span>
+              <span><span class="contact-label">E-posta</span>
+              <a href="mailto:ornek@example.com" data-demo="Gerçek sitede bu bağlantı e-posta uygulamanızı açar.">ornek@example.com</a></span>
+            </li>
+            <li>
+              <span class="contact-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-map-pin"/></svg></span>
+              <span><span class="contact-label">Adres</span>
+              Ihlamur Sokağı No: 7, Mayadere Mah., Ankara</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <!-- Demo: form hiçbir yere veri göndermez. JavaScript yoksa gönder düğmesi kapalı kalır. -->
+          <form class="contact-form" id="iletisim-formu" novalidate>
+            <div class="field">
+              <label for="f-ad">Adınız soyadınız</label>
+              <input id="f-ad" name="ad" type="text" autocomplete="name" required minlength="2" aria-describedby="f-ad-hata">
+              <p class="field-error" id="f-ad-hata"></p>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="f-eposta">E-posta</label>
+                <input id="f-eposta" name="eposta" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-eposta-hata">
+                <p class="field-error" id="f-eposta-hata"></p>
+              </div>
+              <div class="field">
+                <label for="f-telefon">Telefon <span class="optional">(isteğe bağlı)</span></label>
+                <input id="f-telefon" name="telefon" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="f-telefon-hata">
+                <p class="field-error" id="f-telefon-hata"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-konu">Konu</label>
+              <select id="f-konu" name="konu" required aria-describedby="f-konu-hata">
+                <option value="">Seçin</option>
+                <option>Sipariş</option>
+                <option>Toplu ya da özel sipariş</option>
+                <option>Ekşi maya atölyesi</option>
+                <option>Diğer</option>
+              </select>
+              <p class="field-error" id="f-konu-hata"></p>
+            </div>
+            <div class="field">
+              <label for="f-mesaj">Mesajınız</label>
+              <textarea id="f-mesaj" name="mesaj" rows="5" required minlength="10" maxlength="800" aria-describedby="f-mesaj-sayac f-mesaj-hata"></textarea>
+              <p class="field-hint" id="f-mesaj-sayac">En fazla 800 karakter.</p>
+              <p class="field-error" id="f-mesaj-hata"></p>
+            </div>
+            <div class="field field-check">
+              <input id="f-onay" name="onay" type="checkbox" required aria-describedby="f-onay-hata">
+              <label for="f-onay">Bilgilerimin yalnızca bu mesaja yanıt vermek için kullanılacağını biliyorum.</label>
+              <p class="field-error" id="f-onay-hata"></p>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit" disabled>Mesajı gönder</button>
+            <noscript><p class="note">Bu demoda formun çalışması için JavaScript gerekir.</p></noscript>
+            <div class="form-status" id="form-durum" role="status" tabindex="-1" hidden></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#ust">
+          <svg class="brand-mark" aria-hidden="true" focusable="false"><use href="#logo"/></svg>
+          <span class="brand-text">
+            <span class="brand-name">Mayadere</span>
+            <span class="brand-sub">Fırın &amp; Kahve</span>
+          </span>
+        </a>
+        <p>Ekşi mayalı ekmek, hamur işleri ve kahve. Salı’dan pazara açığız.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Ziyaret</h2>
+        <p>Ihlamur Sokağı No: 7<br>Mayadere Mah., Ankara</p>
+        <p>Salı–Cuma 07:00–19:00<br>Cumartesi 08:00–20:00<br>Pazar 08:00–16:00</p>
+      </div>
+      <nav aria-label="Alt menü">
+        <h2 class="footer-title">Sayfada</h2>
+        <ul class="footer-links">
+          <li><a href="#hizmetler">Hizmetler</a></li>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#ziyaret">Saatler ve konum</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p class="demo-note">Bu bir demo sitesidir; işletme, adres ve iletişim bilgileri kurgusaldır.</p>
+      <p>© 2026 Mayadere Fırın &amp; Kahve</p>
+    </div>
+  </footer>
+
+  <div class="quick-actions" role="group" aria-label="Hızlı iletişim">
+    <a class="qa qa-call" href="tel:+903120000000" data-demo="Gerçek sitede bu düğme telefonda 0 (312) 000 00 00 numarasını arar.">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg>
+      <span>Ara</span>
+    </a>
+    <a class="qa qa-wa" href="https://wa.me/903120000000" data-demo="Gerçek sitede bu düğme WhatsApp sohbetini açar.">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chat"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <div class="demo-bubble" aria-hidden="true" hidden></div>
+  <div class="visually-hidden" id="duyuru" aria-live="polite"></div>
+</body>
+</html>
