@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" width="480" height="420">
+  <title>Taş fırın</title>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EBD8BC"/>
+      <stop offset="1" stop-color="#DDC29E"/>
+    </linearGradient>
+    <pattern id="bricks" width="44" height="22" patternUnits="userSpaceOnUse">
+      <rect width="44" height="22" fill="#A9552F"/>
+      <path d="M0 .75h44M0 11.75h44M22 0v11M0 11v11M44 11v11" stroke="#8A4224" stroke-width="1.5"/>
+    </pattern>
+    <radialGradient id="shade" cx=".5" cy=".75" r=".75">
+      <stop offset=".55" stop-color="#2A1208" stop-opacity="0"/>
+      <stop offset="1" stop-color="#2A1208" stop-opacity=".45"/>
+    </radialGradient>
+    <radialGradient id="fire" cx=".3" cy=".85" r=".9">
+      <stop offset="0" stop-color="#FFC46B"/>
+      <stop offset=".35" stop-color="#E5672A"/>
+      <stop offset=".75" stop-color="#5C1F0B"/>
+      <stop offset="1" stop-color="#2A1208"/>
+    </radialGradient>
+    <radialGradient id="crust" cx=".4" cy=".2" r=".9">
+      <stop offset="0" stop-color="#F0B56E"/>
+      <stop offset="1" stop-color="#9A4E1E"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="480" height="420" fill="url(#wall)"/>
+  <g stroke="#D3B892" stroke-width="2" opacity=".6">
+    <path d="M0 70h480M0 140h480"/>
+  </g>
+
+  <!-- baca -->
+  <rect x="296" y="0" width="38" height="96" fill="#7C3B1E"/>
+  <rect x="290" y="0" width="50" height="14" fill="#6A311A"/>
+
+  <!-- kubbe -->
+  <path d="M48 384V226C48 124 136 62 240 62s192 62 192 164v158z" fill="url(#bricks)"/>
+  <path d="M48 384V226C48 124 136 62 240 62s192 62 192 164v158z" fill="url(#shade)"/>
+  <path d="M60 226C60 132 142 76 240 76" fill="none" stroke="#C8714A" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+
+  <!-- ağız -->
+  <path d="M134 384V282c0-56 48-98 106-98s106 42 106 98v102z" fill="url(#fire)"/>
+  <path d="M134 384V282c0-56 48-98 106-98s106 42 106 98v102" fill="none" stroke="#6E3019" stroke-width="16"/>
+  <g stroke="#8A4224" stroke-width="2" opacity=".9">
+    <path d="M126 290h16M338 290h16M140 246l14 6M326 252l14-6M164 210l10 10M306 220l10-10M200 190l4 14M276 204l4-14M240 176v16"/>
+  </g>
+
+  <!-- alevler -->
+  <g>
+    <path d="M168 378c-10-24 4-40 10-58 6 14 16 18 14 34 8-8 8-20 6-30 16 14 22 38 10 54z" fill="#F07A2A"/>
+    <path d="M180 378c-6-14 2-24 6-34 4 8 10 12 8 22 6-4 6-12 6-18 8 10 10 22 4 30z" fill="#FFC861"/>
+  </g>
+
+  <!-- içerideki somunlar -->
+  <path d="M232 378c0-26 18-40 38-40s38 14 38 40z" fill="url(#crust)"/>
+  <path d="M250 362c8-10 20-14 32-12-12 2-22 8-28 16z" fill="#F7D29B"/>
+  <path d="M296 378c0-18 12-28 26-28s26 10 26 28z" fill="url(#crust)" opacity=".85"/>
+
+  <!-- taban -->
+  <rect x="28" y="380" width="424" height="22" rx="3" fill="#7A675A"/>
+  <path d="M28 380h424" stroke="#9A887A" stroke-width="3"/>
+  <rect x="40" y="402" width="400" height="18" fill="#5C4C41"/>
+
+  <!-- kürek -->
+  <path d="M446 384l20-300" stroke="#C8955C" stroke-width="9" stroke-linecap="round"/>
+  <path d="M424 380c-2-30 8-52 26-56 18 2 26 26 22 56z" fill="#D9AB72" transform="rotate(4 448 352)"/>
+</svg>

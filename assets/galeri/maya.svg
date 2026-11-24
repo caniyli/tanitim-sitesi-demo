@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <title>Ekşi maya kavanozu</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EBDDC8"/>
+      <stop offset="1" stop-color="#D9C4A6"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6EFE3"/>
+      <stop offset="1" stop-color="#E9DDCA"/>
+    </linearGradient>
+    <linearGradient id="starter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6EBD3"/>
+      <stop offset="1" stop-color="#E8D3AA"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".55"/>
+      <stop offset=".25" stop-color="#FFFFFF" stop-opacity=".15"/>
+      <stop offset=".8" stop-color="#FFFFFF" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <g stroke="#CDB693" stroke-width="1" opacity=".5">
+    <path d="M0 40h600M0 80h600M0 120h600M0 160h600M0 200h600M0 240h600"/>
+  </g>
+
+  <!-- örtü -->
+  <path d="M0 330c90-18 190-14 300-4s210 10 300-6v130H0z" fill="url(#cloth)"/>
+  <path d="M60 360c40 30 40 60 30 90M470 350c-20 40-10 70 10 100M250 360c10 30 0 60-20 90" fill="none" stroke="#DCCDB4" stroke-width="3"/>
+  <path d="M0 330c90-18 190-14 300-4s210 10 300-6" fill="none" stroke="#C9724A" stroke-width="5" stroke-dasharray="14 10" opacity=".6"/>
+
+  <!-- buğday başakları -->
+  <g transform="translate(-92 92) rotate(-18 120 300)">
+    <path d="M30 310h200M40 316l170 12M40 304l170-12" stroke="#B48A4E" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <g fill="#D7AD62" stroke="#B48A4E" stroke-width="1.2">
+      <ellipse cx="200" cy="310" rx="9" ry="4.5"/><ellipse cx="214" cy="303" rx="8" ry="4" transform="rotate(-25 214 303)"/><ellipse cx="214" cy="317" rx="8" ry="4" transform="rotate(25 214 317)"/>
+      <ellipse cx="228" cy="304" rx="8" ry="4" transform="rotate(-25 228 304)"/><ellipse cx="228" cy="316" rx="8" ry="4" transform="rotate(25 228 316)"/>
+      <ellipse cx="242" cy="310" rx="9" ry="4.5"/>
+      <ellipse cx="196" cy="326" rx="8" ry="4" transform="rotate(10 196 326)"/><ellipse cx="210" cy="330" rx="8" ry="4" transform="rotate(30 210 330)"/>
+      <ellipse cx="224" cy="332" rx="8" ry="4" transform="rotate(5 224 332)"/>
+      <ellipse cx="196" cy="294" rx="8" ry="4" transform="rotate(-10 196 294)"/><ellipse cx="210" cy="290" rx="8" ry="4" transform="rotate(-30 210 290)"/>
+      <ellipse cx="224" cy="288" rx="8" ry="4" transform="rotate(-5 224 288)"/>
+    </g>
+  </g>
+
+  <!-- kavanoz -->
+  <ellipse cx="300" cy="384" rx="96" ry="14" fill="#6A4A2A" opacity=".25"/>
+  <path d="M216 204c0-14 10-22 22-26v-26h124v26c12 4 22 12 22 26v160c0 12-10 20-22 20H238c-12 0-22-8-22-20z" fill="#FFFFFF" opacity=".16"/>
+  <path d="M218 250c26-10 44 4 66-4s42-10 64 0 22 6 34 2v116c0 12-10 20-22 20H240c-12 0-22-8-22-20z" fill="url(#starter)"/>
+  <g fill="#FBF4E4" stroke="#D8C095" stroke-width="1.5">
+    <circle cx="250" cy="290" r="6"/><circle cx="276" cy="318" r="4"/><circle cx="330" cy="300" r="7"/>
+    <circle cx="352" cy="336" r="5"/><circle cx="300" cy="350" r="6"/><circle cx="244" cy="346" r="4"/>
+    <circle cx="316" cy="274" r="3.5"/><circle cx="364" cy="282" r="3"/><circle cx="268" cy="370" r="3.5"/>
+    <circle cx="340" cy="372" r="3"/><circle cx="290" cy="294" r="2.5"/>
+  </g>
+  <rect x="216" y="276" width="168" height="9" rx="2" fill="#C4623A"/>
+  <path d="M216 204c0-14 10-22 22-26v-26h124v26c12 4 22 12 22 26v160c0 12-10 20-22 20H238c-12 0-22-8-22-20z" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="3"/>
+  <path d="M232 214v140" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+  <rect x="234" y="140" width="132" height="14" rx="5" fill="#B9BCBD"/>
+  <path d="M234 147h132" stroke="#9EA2A4" stroke-width="2"/>
+
+  <!-- tahta kaşık -->
+  <path d="M330 220l78-128" stroke="#B98251" stroke-width="11" stroke-linecap="round"/>
+  <ellipse cx="414" cy="80" rx="12" ry="20" transform="rotate(31 414 80)" fill="#C99463"/>
+
+  <!-- un çuvalı -->
+  <path d="M432 384c-10-60-6-120 10-160l-6-16c30 6 66 6 96 0l-6 16c16 40 20 100 10 160z" fill="#F2EBDD"/>
+  <path d="M436 208c30 6 66 6 96 0" fill="none" stroke="#D8CDBA" stroke-width="3"/>
+  <path d="M442 224c28 8 56 8 84 0" fill="none" stroke="#B48A4E" stroke-width="3"/>
+  <text x="486" y="318" text-anchor="middle" font-family="Georgia, 'Palatino Linotype', 'URW Palladio L', P052, serif" font-size="40" font-weight="700" fill="#8A4B22">UN</text>
+  <path d="M458 336h56" stroke="#8A4B22" stroke-width="2"/>
+  <path d="M408 392c14-16 40-20 70-16s40 10 52 16z" fill="#FCF8F0"/>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <title>Dükkânın vitrini</title>
+  <defs>
+    <linearGradient id="plaster" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EEDCC2"/>
+      <stop offset="1" stop-color="#E3CBA9"/>
+    </linearGradient>
+    <linearGradient id="inside" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8DFAF"/>
+      <stop offset="1" stop-color="#E7B576"/>
+    </linearGradient>
+    <pattern id="stripes" width="46" height="60" patternUnits="userSpaceOnUse">
+      <rect width="23" height="60" fill="#C4623A"/>
+      <rect x="23" width="23" height="60" fill="#F5E8D5"/>
+    </pattern>
+    <pattern id="tiles" width="30" height="16" patternUnits="userSpaceOnUse">
+      <rect width="30" height="16" fill="#9E5636"/>
+      <path d="M0 15.5h30M15 0v8M0 8h30M29.5 8v8" stroke="#87452A" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#plaster)"/>
+
+  <!-- tabela -->
+  <rect x="148" y="26" width="304" height="62" rx="6" fill="#2F4A3E"/>
+  <rect x="156" y="34" width="288" height="46" rx="3" fill="none" stroke="#E6CF9E" stroke-width="1.5" opacity=".7"/>
+  <text x="300" y="62" text-anchor="middle" font-family="Georgia, 'Palatino Linotype', 'URW Palladio L', P052, serif" font-size="26" font-weight="700" letter-spacing="6" fill="#F3E3C1">MAYADERE</text>
+  <text x="300" y="76" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" letter-spacing="4" fill="#E6CF9E">FIRIN · KAHVE</text>
+  <!-- duvar lambaları -->
+  <g fill="#2F2B28">
+    <path d="M118 52h14v6h-14zM124 58v8"/>
+    <path d="M112 66h26l-6 12h-14z"/>
+    <path d="M468 52h14v6h-14zM474 58v8"/>
+    <path d="M462 66h26l-6 12h-14z"/>
+  </g>
+  <circle cx="125" cy="80" r="4" fill="#FFE3A3"/>
+  <circle cx="475" cy="80" r="4" fill="#FFE3A3"/>
+
+  <!-- tente -->
+  <path d="M92 106h416l22 52H70z" fill="url(#stripes)"/>
+  <path d="M92 106h416" stroke="#8D4426" stroke-width="5"/>
+  <g>
+    <circle cx="81.5" cy="158" r="11.5" fill="#C4623A"/><circle cx="104.5" cy="158" r="11.5" fill="#F5E8D5"/>
+    <circle cx="127.5" cy="158" r="11.5" fill="#C4623A"/><circle cx="150.5" cy="158" r="11.5" fill="#F5E8D5"/>
+    <circle cx="173.5" cy="158" r="11.5" fill="#C4623A"/><circle cx="196.5" cy="158" r="11.5" fill="#F5E8D5"/>
+    <circle cx="219.5" cy="158" r="11.5" fill="#C4623A"/><circle cx="242.5" cy="158" r="11.5" fill="#F5E8D5"/>
+    <circle cx="265.5" cy="158" r="11.5" fill="#C4623A"/><circle cx="288.5" cy="158" r="11.5" fill="#F5E8D5"/>
+    <circle cx="311.5" cy="158" r="11.5" fill="#C4623A"/><circle cx="334.5" cy="158" r="11.5" fill="#F5E8D5"/>
+    <circle cx="357.5" cy="158" r="11.5" fill="#C4623A"/><circle cx="380.5" cy="158" r="11.5" fill="#F5E8D5"/>
+    <circle cx="403.5" cy="158" r="11.5" fill="#C4623A"/><circle cx="426.5" cy="158" r="11.5" fill="#F5E8D5"/>
+    <circle cx="449.5" cy="158" r="11.5" fill="#C4623A"/><circle cx="472.5" cy="158" r="11.5" fill="#F5E8D5"/>
+    <circle cx="495.5" cy="158" r="11.5" fill="#C4623A"/><circle cx="518.5" cy="158" r="11.5" fill="#F5E8D5"/>
+  </g>
+  <rect x="70" y="150" width="460" height="8" fill="#000" opacity=".06"/>
+
+  <!-- alt duvar karoları -->
+  <rect x="0" y="340" width="600" height="84" fill="url(#tiles)"/>
+  <rect x="0" y="336" width="600" height="6" fill="#7E3E24"/>
+
+  <!-- vitrin camı -->
+  <rect x="86" y="184" width="270" height="200" rx="4" fill="#3A2A20"/>
+  <rect x="96" y="194" width="250" height="180" fill="url(#inside)"/>
+  <rect x="96" y="262" width="250" height="6" fill="#9C6A3E"/>
+  <rect x="96" y="330" width="250" height="6" fill="#9C6A3E"/>
+  <g fill="#B96E33">
+    <path d="M112 262c0-22 14-34 30-34s30 12 30 34z"/>
+    <path d="M182 262c0-22 14-34 30-34s30 12 30 34z"/>
+    <path d="M252 262c0-12 20-22 40-22s40 10 40 22z"/>
+    <path d="M110 330c0-10 20-18 44-18s44 8 44 18z"/>
+    <path d="M210 330c0-22 14-34 30-34s30 12 30 34z"/>
+    <path d="M282 330c0-16 12-26 26-26s26 10 26 26z"/>
+  </g>
+  <g fill="#EDC48A">
+    <path d="M126 246c6-6 14-8 22-6-8 2-14 6-18 10zM196 246c6-6 14-8 22-6-8 2-14 6-18 10zM268 250c10-4 22-4 32 0-10 0-20 2-28 4zM224 314c6-6 14-8 22-6-8 2-14 6-18 10z"/>
+  </g>
+  <path d="M96 194l90 0-90 120z" fill="#FFFFFF" opacity=".18"/>
+  <path d="M206 374l140-150v60l-84 90z" fill="#FFFFFF" opacity=".12"/>
+  <rect x="80" y="384" width="282" height="12" rx="2" fill="#CDB99B"/>
+
+  <!-- saksı -->
+  <rect x="92" y="396" width="258" height="30" rx="3" fill="#6F4A2E"/>
+  <g fill="#6F8763">
+    <ellipse cx="110" cy="394" rx="18" ry="11"/><ellipse cx="146" cy="390" rx="20" ry="12"/>
+    <ellipse cx="186" cy="394" rx="18" ry="10"/><ellipse cx="224" cy="390" rx="20" ry="12"/>
+    <ellipse cx="262" cy="394" rx="18" ry="10"/><ellipse cx="298" cy="390" rx="20" ry="12"/>
+    <ellipse cx="334" cy="394" rx="16" ry="10"/>
+  </g>
+  <g fill="#D9483B">
+    <circle cx="128" cy="384" r="5"/><circle cx="170" cy="380" r="5"/><circle cx="206" cy="386" r="4"/>
+    <circle cx="246" cy="380" r="5"/><circle cx="284" cy="384" r="4"/><circle cx="320" cy="380" r="5"/>
+  </g>
+
+  <!-- kapı -->
+  <rect x="384" y="180" width="132" height="246" rx="3" fill="#3A2A20"/>
+  <rect x="392" y="188" width="116" height="238" fill="#2F4A3E"/>
+  <rect x="404" y="200" width="92" height="110" rx="2" fill="url(#inside)"/>
+  <path d="M404 200h40l-40 54z" fill="#FFFFFF" opacity=".18"/>
+  <rect x="404" y="324" width="92" height="88" rx="2" fill="none" stroke="#24392F" stroke-width="3"/>
+  <rect x="490" y="300" width="8" height="34" rx="3" fill="#D8B36A"/>
+  <!-- AÇIK levhası -->
+  <path d="M430 226l20-18 20 18" fill="none" stroke="#5A3A20" stroke-width="1.5"/>
+  <rect x="420" y="226" width="60" height="26" rx="4" fill="#FBF4E6" stroke="#5A3A20" stroke-width="1.5"/>
+  <text x="450" y="244" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#2F4A3E">AÇIK</text>
+
+  <!-- kaldırım -->
+  <rect y="424" width="600" height="26" fill="#CFC3B1"/>
+  <path d="M0 426h600M60 426v24M180 426v24M300 426v24M420 426v24M540 426v24" stroke="#B9AC98" stroke-width="2"/>
+
+  <!-- yazı tahtası -->
+  <g>
+    <path d="M540 300l-22 132M566 300l22 132" stroke="#7A4F2C" stroke-width="6" stroke-linecap="round"/>
+    <path d="M532 304h42l12 84h-66z" fill="#2E2B29" stroke="#7A4F2C" stroke-width="4" stroke-linejoin="round"/>
+    <text x="553" y="324" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#F1E6D2">BUGÜN</text>
+    <path d="M536 360c0-14 8-22 17-22s17 8 17 22z" fill="none" stroke="#F1E6D2" stroke-width="2"/>
+    <path d="M544 352c4-4 9-5 14-4" fill="none" stroke="#F1E6D2" stroke-width="1.6"/>
+    <path d="M534 372h38" stroke="#F1E6D2" stroke-width="1.6" stroke-dasharray="5 4"/>
+  </g>
+</svg>

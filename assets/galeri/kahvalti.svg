@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <title>Hafta sonu kahvaltısı</title>
+  <defs>
+    <radialGradient id="yolk" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#FFD27A"/>
+      <stop offset="1" stop-color="#EE9A26"/>
+    </radialGradient>
+    <radialGradient id="tea" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#C8452A"/>
+      <stop offset="1" stop-color="#7C2312"/>
+    </radialGradient>
+    <radialGradient id="honey" cx=".45" cy=".4" r=".6">
+      <stop offset="0" stop-color="#F6C45E"/>
+      <stop offset="1" stop-color="#D98B22"/>
+    </radialGradient>
+    <g id="slice">
+      <path d="M-34 26c-6-30-4-52 6-62 8-8 20-6 28 0 8-6 20-8 28 0 10 10 12 32 6 62z" fill="#A65E28"/>
+      <path d="M-27 20c-4-24-2-42 6-50 6-5 14-4 21 2 7-6 15-7 21-2 8 8 10 26 6 50z" fill="#F1DCB2"/>
+      <g fill="#D8B37C"><circle cx="-10" cy="-8" r="3"/><circle cx="10" cy="2" r="2.5"/><circle cx="-4" cy="10" r="2"/><circle cx="14" cy="-16" r="2"/></g>
+    </g>
+  </defs>
+
+  <!-- masa -->
+  <rect width="600" height="450" fill="#B47E4D"/>
+  <g fill="#A87245">
+    <rect x="0" width="96" height="450"/><rect x="200" width="100" height="450"/><rect x="404" width="98" height="450"/>
+  </g>
+  <path d="M98 0v450M200 0v450M302 0v450M404 0v450M502 0v450" stroke="#8E5D35" stroke-width="3"/>
+  <path d="M30 40c10 60-6 120 6 200M150 120c8 50-4 90 4 150M350 30c10 50-6 110 4 170M450 220c6 40-4 90 4 140M560 60c8 50-6 100 4 160" stroke="#9A6A3E" stroke-width="2" fill="none" opacity=".6"/>
+
+  <!-- peçete -->
+  <rect x="80" y="54" width="330" height="352" rx="6" fill="#EEE3D0" transform="rotate(-4 245 230)"/>
+  <path d="M96 92l316-22M110 380l316-22" stroke="#C4623A" stroke-width="5" opacity=".7" transform="rotate(0)"/>
+
+  <!-- tabak -->
+  <circle cx="250" cy="232" r="152" fill="#5A3A20" opacity=".2"/>
+  <circle cx="246" cy="226" r="152" fill="#FBF8F3"/>
+  <circle cx="246" cy="226" r="120" fill="none" stroke="#EAE2D6" stroke-width="3"/>
+  <circle cx="246" cy="226" r="148" fill="none" stroke="#E2D8C9" stroke-width="2"/>
+
+  <!-- yumurta -->
+  <path d="M164 138c18-26 58-30 82-12 22 16 20 50 2 66-20 18-54 22-78 8-22-14-22-42-6-62z" fill="#FFFEFB" stroke="#ECE5DA" stroke-width="2"/>
+  <circle cx="204" cy="164" r="22" fill="url(#yolk)"/>
+  <ellipse cx="197" cy="157" rx="7" ry="5" fill="#FFF1C9" opacity=".8"/>
+
+  <!-- beyaz peynir -->
+  <rect x="270" y="132" width="76" height="56" rx="6" fill="#FFFDF7" stroke="#E6DED0" stroke-width="2" transform="rotate(8 308 160)"/>
+  <g fill="#EEE6D8"><circle cx="292" cy="150" r="2"/><circle cx="320" cy="168" r="2.5"/><circle cx="306" cy="176" r="1.6"/></g>
+
+  <!-- kaşar -->
+  <path d="M290 222l70-24 4 54z" fill="#F2CC6B" stroke="#DDAF46" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M300 250l62-6 2 30-60 4z" fill="#F5D57F" stroke="#DDAF46" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- domates -->
+  <g transform="translate(232 300)">
+    <circle r="30" fill="#D9483B"/><circle r="23" fill="#EE6A55"/>
+    <g fill="#F7C9A2"><ellipse cx="-9" cy="-6" rx="4" ry="2.5"/><ellipse cx="9" cy="-6" rx="4" ry="2.5"/><ellipse cx="0" cy="10" rx="4" ry="2.5"/></g>
+    <circle r="5" fill="#F48A72"/>
+  </g>
+  <g transform="translate(288 320)">
+    <circle r="27" fill="#D9483B"/><circle r="20" fill="#EE6A55"/>
+    <g fill="#F7C9A2"><ellipse cx="-8" cy="-5" rx="3.5" ry="2.2"/><ellipse cx="8" cy="-5" rx="3.5" ry="2.2"/><ellipse cx="0" cy="9" rx="3.5" ry="2.2"/></g>
+    <circle r="4" fill="#F48A72"/>
+  </g>
+
+  <!-- salatalık -->
+  <g>
+    <circle cx="150" cy="250" r="20" fill="#5E8040"/><circle cx="150" cy="250" r="16" fill="#DCE6BE"/><circle cx="150" cy="250" r="7" fill="#C7D69C"/>
+    <circle cx="164" cy="284" r="20" fill="#5E8040"/><circle cx="164" cy="284" r="16" fill="#DCE6BE"/><circle cx="164" cy="284" r="7" fill="#C7D69C"/>
+  </g>
+
+  <!-- zeytin -->
+  <g>
+    <ellipse cx="196" cy="226" rx="10" ry="13" fill="#2E2421" transform="rotate(20 196 226)"/>
+    <ellipse cx="216" cy="236" rx="10" ry="13" fill="#3A2C28" transform="rotate(-30 216 236)"/>
+    <ellipse cx="204" cy="254" rx="10" ry="13" fill="#2E2421" transform="rotate(70 204 254)"/>
+    <ellipse cx="228" cy="214" rx="10" ry="13" fill="#7F8F3E" transform="rotate(10 228 214)"/>
+    <g fill="#FFFFFF" opacity=".45"><circle cx="193" cy="221" r="2.5"/><circle cx="213" cy="231" r="2.5"/><circle cx="201" cy="250" r="2.5"/><circle cx="225" cy="209" r="2.5"/></g>
+  </g>
+
+  <!-- çay -->
+  <circle cx="490" cy="112" r="56" fill="#5A3A20" opacity=".2"/>
+  <circle cx="486" cy="106" r="56" fill="#F6F1E8"/>
+  <circle cx="486" cy="106" r="48" fill="none" stroke="#B8C4D6" stroke-width="3" stroke-dasharray="3 6"/>
+  <circle cx="486" cy="106" r="30" fill="url(#tea)"/>
+  <circle cx="486" cy="106" r="30" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".7"/>
+  <path d="M470 92a20 20 0 0 1 14-6" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".6" fill="none"/>
+  <path d="M520 148l40 34" stroke="#C9CCCE" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="514" cy="142" rx="9" ry="6" fill="#C9CCCE" transform="rotate(40 514 142)"/>
+  <rect x="430" y="148" width="14" height="14" rx="2" fill="#FFFFFF" transform="rotate(12 437 155)"/>
+
+  <!-- bal -->
+  <circle cx="486" cy="236" r="34" fill="#5A3A20" opacity=".2"/>
+  <circle cx="482" cy="232" r="34" fill="#E9E1D3"/>
+  <circle cx="482" cy="232" r="26" fill="url(#honey)"/>
+  <path d="M470 222c6-6 14-7 20-4" stroke="#FFF0C4" stroke-width="3" stroke-linecap="round" fill="none" opacity=".8"/>
+
+  <!-- ekmek sepeti -->
+  <circle cx="490" cy="368" r="88" fill="#5A3A20" opacity=".2"/>
+  <circle cx="486" cy="362" r="88" fill="#C99A5E"/>
+  <circle cx="486" cy="362" r="78" fill="none" stroke="#A97C47" stroke-width="6" stroke-dasharray="10 6"/>
+  <circle cx="486" cy="362" r="64" fill="#EADBC1"/>
+  <use href="#slice" transform="translate(462 354) rotate(-18)"/>
+  <use href="#slice" transform="translate(510 368) rotate(14)"/>
+
+  <!-- çatal bıçak -->
+  <g stroke="#C9CCCE" stroke-linecap="round">
+    <path d="M60 120v260" stroke-width="7"/>
+    <path d="M52 70v40M60 70v40M68 70v40" stroke-width="3"/>
+    <path d="M52 110c0 10 16 10 16 0" fill="none" stroke-width="3"/>
+  </g>
+</svg>

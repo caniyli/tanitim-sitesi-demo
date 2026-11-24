@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <title>Sabahın ilk somunları</title>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F3E4CE"/>
+      <stop offset="1" stop-color="#E2C7A3"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF9EC" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#FFF9EC" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="table" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A86F42"/>
+      <stop offset="1" stop-color="#77492A"/>
+    </linearGradient>
+    <radialGradient id="crust" cx=".35" cy=".22" r=".9">
+      <stop offset="0" stop-color="#E4AC6C"/>
+      <stop offset=".5" stop-color="#BC7234"/>
+      <stop offset="1" stop-color="#7E3E18"/>
+    </radialGradient>
+    <radialGradient id="crumb" cx=".5" cy=".65" r=".7">
+      <stop offset="0" stop-color="#F8E8C8"/>
+      <stop offset="1" stop-color="#EACD9C"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#wall)"/>
+  <path d="M0 0h270L80 300H0z" fill="url(#light)"/>
+
+  <!-- duvar rafı -->
+  <g>
+    <rect x="356" y="64" width="34" height="48" rx="7" fill="#F8F0E3"/>
+    <rect x="356" y="58" width="34" height="9" rx="3" fill="#B98251"/>
+    <rect x="360" y="84" width="26" height="24" rx="4" fill="#E6C896"/>
+    <rect x="402" y="48" width="40" height="64" rx="9" fill="#F8F0E3"/>
+    <rect x="402" y="42" width="40" height="10" rx="3" fill="#B98251"/>
+    <rect x="407" y="70" width="30" height="38" rx="5" fill="#C9924F"/>
+    <path d="M500 112h40l-6-34h-28z" fill="#C46A3A"/>
+    <path d="M520 80c-4-22-20-30-30-28 4 12 14 24 30 28zM520 80c2-24 16-36 28-36-2 14-12 28-28 36zM520 80c-10-16-6-36 0-44 8 10 8 30 0 44z" fill="#6F8763"/>
+    <rect x="344" y="112" width="220" height="10" rx="3" fill="#8E5E36"/>
+    <path d="M364 122v16M544 122v16" stroke="#77492A" stroke-width="7"/>
+  </g>
+
+  <!-- tezgâh -->
+  <rect y="300" width="600" height="150" fill="url(#table)"/>
+  <rect y="294" width="600" height="10" fill="#6A3F20"/>
+  <path d="M0 356h600M0 410h600" stroke="#5E3819" stroke-opacity=".3" stroke-width="2"/>
+  <path d="M40 330c40-4 70 2 110-2M420 384c50-4 90 2 140-2M120 432c40-3 80 2 120-1" stroke="#C48A57" stroke-opacity=".35" stroke-width="2" fill="none"/>
+
+  <!-- ekmek tahtası -->
+  <ellipse cx="214" cy="364" rx="164" ry="34" fill="#3E2210" opacity=".3"/>
+  <ellipse cx="210" cy="354" rx="156" ry="32" fill="#B7834F"/>
+  <ellipse cx="210" cy="347" rx="156" ry="30" fill="#D6A56F"/>
+  <ellipse cx="210" cy="347" rx="124" ry="22" fill="none" stroke="#C3905A" stroke-width="2" opacity=".7"/>
+  <ellipse cx="210" cy="347" rx="92" ry="15" fill="none" stroke="#C3905A" stroke-width="2" opacity=".5"/>
+
+  <!-- yuvarlak ekşi mayalı somun -->
+  <ellipse cx="210" cy="347" rx="112" ry="13" fill="#4A2810" opacity=".35"/>
+  <path d="M100 343c0-86 48-140 110-140s110 54 110 140c0 6-5 9-12 9H112c-7 0-12-3-12-9z" fill="url(#crust)"/>
+  <path d="M136 320c16-56 66-88 126-78-54 6-94 36-114 84z" fill="#F1CB92"/>
+  <path d="M148 326c20-48 60-78 114-84" fill="none" stroke="#7E3E18" stroke-width="3" stroke-linecap="round"/>
+  <path d="M252 296c12-9 26-11 40-6-14 2-26 8-35 17zM262 324c10-7 22-8 33-3-11 2-21 6-29 13zM158 254c8-9 18-14 30-14-10 4-18 10-24 18z" fill="#EDC48A"/>
+  <g fill="#FFFCF4" opacity=".6">
+    <circle cx="190" cy="222" r="3"/><circle cx="214" cy="216" r="2"/><circle cx="236" cy="226" r="2.5"/>
+    <circle cx="174" cy="238" r="2"/><circle cx="252" cy="240" r="1.8"/><circle cx="204" cy="234" r="1.6"/>
+    <circle cx="70" cy="356" r="2"/><circle cx="330" cy="364" r="2.4"/><circle cx="300" cy="372" r="1.6"/>
+  </g>
+
+  <!-- uzun somun -->
+  <g transform="rotate(-7 452 286)">
+    <ellipse cx="452" cy="296" rx="118" ry="14" fill="#3E2210" opacity=".3"/>
+    <path d="M334 290c0-34 52-56 118-56s118 22 118 56c0 8-8 12-18 12H352c-10 0-18-4-18-12z" fill="url(#crust)"/>
+    <path d="M366 262c14-12 32-16 52-14-18 4-34 10-46 20zM416 252c16-10 36-12 56-8-20 2-38 8-50 16zM470 252c16-8 34-8 52-2-18 0-34 4-46 10z" fill="#F0C88E"/>
+  </g>
+
+  <!-- dilim -->
+  <g>
+    <ellipse cx="462" cy="408" rx="82" ry="10" fill="#3E2210" opacity=".35"/>
+    <path d="M386 404c0-58 32-96 76-96s76 38 76 96z" fill="#9A5424"/>
+    <path d="M396 404c0-50 28-84 66-84s66 34 66 84z" fill="url(#crumb)"/>
+    <g fill="#D9B07A">
+      <ellipse cx="438" cy="352" rx="7" ry="5"/><ellipse cx="470" cy="344" rx="5" ry="4"/>
+      <ellipse cx="492" cy="368" rx="8" ry="5"/><ellipse cx="452" cy="380" rx="6" ry="4"/>
+      <ellipse cx="420" cy="384" rx="4" ry="3"/><ellipse cx="506" cy="392" rx="4" ry="3"/>
+      <ellipse cx="478" cy="392" rx="3" ry="2.5"/><ellipse cx="462" cy="362" rx="3" ry="2"/>
+      <ellipse cx="430" cy="366" rx="3" ry="2"/><ellipse cx="500" cy="350" rx="3" ry="2"/>
+    </g>
+  </g>
+
+  <!-- ekmek bıçağı -->
+  <g transform="rotate(-4 180 420)">
+    <path d="M60 414h150v12H72c-8 0-12-3-12-6z" fill="#D9DCDD"/>
+    <path d="M60 426h150" stroke="#9EA3A6" stroke-width="2" stroke-dasharray="4 3"/>
+    <rect x="208" y="411" width="96" height="18" rx="7" fill="#5E3A1E"/>
+    <circle cx="232" cy="420" r="2.5" fill="#D6C2A2"/><circle cx="280" cy="420" r="2.5" fill="#D6C2A2"/>
+  </g>
+</svg>

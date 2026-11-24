@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <title>Filtre kahve</title>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#AEBA9F"/>
+      <stop offset="1" stop-color="#8C9A7E"/>
+    </linearGradient>
+    <linearGradient id="counter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DDBD92"/>
+      <stop offset="1" stop-color="#C49C6B"/>
+    </linearGradient>
+    <linearGradient id="coffee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6E3C1E"/>
+      <stop offset="1" stop-color="#3A1E0E"/>
+    </linearGradient>
+    <linearGradient id="ceramic" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FBF8F2"/>
+      <stop offset=".7" stop-color="#EDE6DA"/>
+      <stop offset="1" stop-color="#D9CFC0"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".45"/>
+      <stop offset=".35" stop-color="#FFFFFF" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#wall)"/>
+  <path d="M0 330h600" stroke="#7F8C72" stroke-width="2"/>
+  <g stroke="#9FAC90" stroke-width="2" opacity=".6">
+    <path d="M0 60h600M0 140h600M0 220h600"/>
+  </g>
+
+  <!-- tezgâh -->
+  <rect y="330" width="600" height="120" fill="url(#counter)"/>
+  <rect y="330" width="600" height="8" fill="#B88C5A"/>
+
+  <!-- su ısıtıcısı -->
+  <g>
+    <path d="M150 150c46 2 54-40 70-58 10-11 22-10 30-3" fill="none" stroke="#2D2A28" stroke-width="10" stroke-linecap="round"/>
+    <path d="M-20 54h148c14 0 22 10 22 24v62c0 22-16 36-38 36H-20z" fill="#2D2A28"/>
+    <path d="M-20 44h132c8 0 12 4 12 10H-20z" fill="#3B3734"/>
+    <rect x="44" y="28" width="22" height="16" rx="6" fill="#B98251"/>
+    <path d="M10 76v80" stroke="#5A5552" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+    <path d="M254 92c8 10 18 22 30 34" fill="none" stroke="#F3EEE4" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+  </g>
+
+  <!-- buhar -->
+  <g fill="none" stroke="#F6F3EC" stroke-width="5" stroke-linecap="round" opacity=".55">
+    <path d="M398 250c-10-12 10-20 0-34s10-22 0-34"/>
+    <path d="M420 262c-8-10 8-16 0-28s8-18 0-28"/>
+  </g>
+
+  <!-- terazi -->
+  <rect x="196" y="318" width="208" height="20" rx="7" fill="#2F2C2A"/>
+  <rect x="280" y="324" width="40" height="8" rx="2" fill="#97C78F" opacity=".9"/>
+
+  <!-- sürahi -->
+  <path d="M226 214h148c8 30 12 62 8 92-2 8-8 12-16 12H234c-8 0-14-4-16-12-4-30 0-62 8-92z" fill="url(#coffee)" opacity=".18"/>
+  <path d="M220 262c52 6 108 6 160 0 4 16 6 30 4 44-2 8-8 12-16 12H232c-8 0-14-4-16-12-2-14 0-28 4-44z" fill="url(#coffee)"/>
+  <ellipse cx="300" cy="263" rx="80" ry="6" fill="#8C5530"/>
+  <path d="M226 214h148c8 30 12 62 8 92-2 8-8 12-16 12H234c-8 0-14-4-16-12-4-30 0-62 8-92z" fill="url(#glass)" stroke="#F4F1EA" stroke-width="3" stroke-opacity=".85"/>
+  <path d="M238 228c-4 24-6 50-2 74" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+  <path d="M374 236c12 4 18 16 16 30s-12 22-22 22" fill="none" stroke="#F4F1EA" stroke-width="6" stroke-opacity=".8"/>
+  <rect x="244" y="204" width="112" height="14" rx="6" fill="#3B2A20"/>
+
+  <!-- demleme hunisi -->
+  <path d="M232 128h136l-30 72h-76z" fill="url(#ceramic)"/>
+  <path d="M262 136l18 60M300 136v60M338 136l-18 60" stroke="#D8CDBD" stroke-width="2"/>
+  <path d="M244 116h112l-6 14H250z" fill="#F2E6CB"/>
+  <path d="M244 116l8-10 8 10 8-10 8 10 8-10 8 10 8-10 8 10 8-10 8 10 8-10 8 10 8-10 4 6" fill="none" stroke="#E9DAB9" stroke-width="2"/>
+  <ellipse cx="300" cy="128" rx="70" ry="9" fill="#FBF8F2" stroke="#D9CFC0" stroke-width="2"/>
+  <ellipse cx="300" cy="128" rx="56" ry="5" fill="#5A321A"/>
+  <path d="M366 140c16 0 22 10 20 22s-14 16-26 14" fill="none" stroke="#EDE6DA" stroke-width="9" stroke-linecap="round"/>
+  <rect x="268" y="198" width="64" height="8" rx="3" fill="#E5DCCD"/>
+
+  <!-- fincan -->
+  <ellipse cx="500" cy="356" rx="58" ry="11" fill="#9D7A52" opacity=".5"/>
+  <ellipse cx="500" cy="350" rx="58" ry="11" fill="#F6F1E8"/>
+  <path d="M458 286h84v36c0 18-18 30-42 30s-42-12-42-30z" fill="#C46A3A"/>
+  <path d="M542 298c18 0 22 22 4 28" fill="none" stroke="#C46A3A" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="500" cy="286" rx="42" ry="8" fill="#A9552C"/>
+  <ellipse cx="500" cy="287" rx="36" ry="5.5" fill="#4A2612"/>
+
+  <!-- çekirdekler -->
+  <g fill="#4B2A16">
+    <ellipse cx="90" cy="372" rx="9" ry="6" transform="rotate(-20 90 372)"/>
+    <ellipse cx="112" cy="388" rx="9" ry="6" transform="rotate(30 112 388)"/>
+    <ellipse cx="78" cy="398" rx="9" ry="6" transform="rotate(70 78 398)"/>
+    <ellipse cx="140" cy="370" rx="9" ry="6" transform="rotate(10 140 370)"/>
+    <ellipse cx="128" cy="410" rx="9" ry="6" transform="rotate(-40 128 410)"/>
+    <ellipse cx="420" cy="406" rx="9" ry="6" transform="rotate(20 420 406)"/>
+    <ellipse cx="446" cy="420" rx="9" ry="6" transform="rotate(-30 446 420)"/>
+  </g>
+  <g stroke="#8B5A36" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <path d="M84 370c4 2 8 2 12 4M108 384c2 3 6 6 9 7M76 393c1 4 3 8 5 10M134 369c4 1 8 1 12 1M124 413c3-2 6-5 8-7M414 403c4 2 8 4 12 5M440 423c4-2 8-4 11-7"/>
+  </g>
+</svg>
